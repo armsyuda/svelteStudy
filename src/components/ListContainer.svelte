@@ -6,7 +6,7 @@
   import CreateList from "./CreateList.svelte";
 
   let listsEl;
-  let sortableList;
+  let sortableLists;
 
   onMount(() => {
     // For Lists

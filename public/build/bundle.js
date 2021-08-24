@@ -11565,9 +11565,9 @@ var app = (function () {
     			t = space();
     			create_component(createlist.$$.fragment);
     			attr_dev(div0, "class", "lists svelte-114mwmj");
-    			add_location(div0, file, 31, 2, 1001);
+    			add_location(div0, file, 31, 2, 1002);
     			attr_dev(div1, "class", "list-container svelte-114mwmj");
-    			add_location(div1, file, 30, 0, 969);
+    			add_location(div1, file, 30, 0, 970);
     		},
     		l: function claim(nodes) {
     			throw new Error("options.hydrate only works if the component was compiled with the `hydratable: true` option");
@@ -11643,7 +11643,7 @@ var app = (function () {
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('ListContainer', slots, []);
     	let listsEl;
-    	let sortableList;
+    	let sortableLists;
 
     	onMount(() => {
     		// For Lists
@@ -11686,13 +11686,13 @@ var app = (function () {
     		List,
     		CreateList,
     		listsEl,
-    		sortableList,
+    		sortableLists,
     		$lists
     	});
 
     	$$self.$inject_state = $$props => {
     		if ('listsEl' in $$props) $$invalidate(0, listsEl = $$props.listsEl);
-    		if ('sortableList' in $$props) sortableList = $$props.sortableList;
+    		if ('sortableLists' in $$props) sortableLists = $$props.sortableLists;
     	};
 
     	if ($$props && "$$inject" in $$props) {
